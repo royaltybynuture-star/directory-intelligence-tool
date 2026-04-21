@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "directory-intelligence-tool"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "click>=8.0",
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "rich>=13.0",
+    "beautifulsoup4>=4.12",
+    "playwright>=1.40",
+    "pypdf>=4.0",
+    "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+# pip install -e ".[firecrawl]" to enable the Firecrawl fallback (Tier 2.5).
+# Also requires FIRECRAWL_API_KEY in your environment.
+firecrawl = ["firecrawl-py>=1.0"]
+
+[tool.setuptools]
+packages = ["core", "skills", "commands"]
+py-modules = ["dit"]
+
+[project.scripts]
+dit = "dit:cli"

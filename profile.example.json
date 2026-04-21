@@ -1,0 +1,17 @@
+{
+  "company": {
+    "name": "Acme Cybersecurity Training",
+    "what_you_do": "Hands-on cybersecurity training and certification for enterprise security teams — cuts new-hire ramp time and keeps senior staff sharp on emerging threats. Certifications are recognized by NIST and major enterprise buyers."
+  },
+  "icp": {
+    "description": "Mid-market and enterprise CISOs, VPs of Security, Directors of Security Operations, and Heads of Information Security. Especially in regulated industries: financial services, healthcare, SaaS, and critical infrastructure. Director-and-above seniority.",
+    "geo": "US"
+  },
+  "past_campaigns_text": "Q1 CISO outbound via Evanta governing bodies + RSA 2024 speaker list. Reply rate jumped to ~18% when we personalized from Evanta spotlight blogs, referencing the CISO's stated top challenge. Generic 'training platform' cold opens flopped. Conference speaker angle didn't work unless we referenced a specific talk.",
+  "excluded_sources": [
+    "LinkedIn Sales Navigator",
+    "Apollo",
+    "ZoomInfo",
+    "Clay people search"
+  ]
+}

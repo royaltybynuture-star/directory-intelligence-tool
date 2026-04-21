@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import ast; [ast.parse\\(open\\(p\\).read\\(\\)\\) for p in ['dit.py','commands/find.py','commands/init_cmd.py','core/profile.py','core/workspace.py','core/claude_client.py','core/verify.py']]; print\\('all syntax OK'\\)\")",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, '.'\\); from commands.init_cmd import run_init; from commands.find import run_find; from core.profile import profile_exists, load_profile, save_profile, profile_to_prompt_context; from core.workspace import new_run, run_dir, save_json, save_text, load_json, resolve_run_id; from core.claude_client import get_client, cached_system_block, run_tool_loop, extract_text; from core.verify import verify_urls; print\\('all imports OK'\\)\")",
+      "Bash(python -m py_compile dit.py commands/find.py commands/extract.py commands/strategize.py core/verify.py skills/common.py skills/html_scraper.py skills/js_scraper.py skills/pdf_scraper.py)",
+      "Bash(python -c \"from commands.find import run_find, MORE_REQUEST_TEMPLATE; from commands.extract import run_extract; from commands.strategize import run_strategize, _extract_url, _acquire_source_context; from core.verify import verify_urls, _heuristic_content_check; from skills.common import format_truncation_warning; print\\('IMPORTS OK'\\); print\\('MORE_REQUEST exists:', bool\\(MORE_REQUEST_TEMPLATE\\)\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('commands/find.py'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('commands/extract.py'\\).read\\(\\)\\); ast.parse\\(open\\('skills/common.py'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('dit.py'\\).read\\(\\)\\); print\\('syntax OK'\\)\")",
+      "Bash(python dit.py strategize --help)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('core/verify.py'\\).read\\(\\)\\); ast.parse\\(open\\('commands/find.py'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('skills/custom_scraper.py'\\).read\\(\\)\\); ast.parse\\(open\\('commands/extract.py'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('dit.py'\\).read\\(\\)\\); ast.parse\\(open\\('commands/init_cmd.py'\\).read\\(\\)\\); print\\('OK'\\)\")",
+      "Bash(python -c \"import ast, pathlib; [ast.parse\\(p.read_text\\(encoding='utf-8'\\), filename=str\\(p\\)\\) for p in [pathlib.Path\\('core/profile.py'\\), pathlib.Path\\('commands/profiles_cmd.py'\\), pathlib.Path\\('commands/init_cmd.py'\\), pathlib.Path\\('commands/find.py'\\), pathlib.Path\\('commands/strategize.py'\\), pathlib.Path\\('dit.py'\\)]]; print\\('all syntactically clean'\\)\")",
+      "Bash(python -c \"import ast, pathlib; [ast.parse\\(p.read_text\\(encoding='utf-8'\\), filename=str\\(p\\)\\) for p in [pathlib.Path\\('commands/extract.py'\\), pathlib.Path\\('skills/firecrawl_scraper.py'\\)]]; print\\('syntax OK'\\)\")",
+      "Bash(python dit.py extract --help)",
+      "Bash(python -c \"import ast, pathlib; ast.parse\\(pathlib.Path\\('skills/verify.py'\\).read_text\\(encoding='utf-8'\\)\\); print\\('syntax OK'\\)\")",
+      "Bash(python3 -c \"import ast, pathlib; ast.parse\\(pathlib.Path\\('skills/verify.py'\\).read_text\\(encoding='utf-8'\\)\\); print\\('syntax OK'\\)\")",
+      "Bash(py -c ' *)",
+      "Bash(python.exe -c \"import ast, pathlib; [ast.parse\\(pathlib.Path\\(f\\).read_text\\(encoding='utf-8'\\), filename=f\\) for f in ['core/workspace.py','commands/find.py','commands/extract.py','commands/strategize.py','dit.py']]; print\\('all syntax OK'\\)\")",
+      "Read(//usr/**)",
+      "Read(//c/Users/OLIVERTEC/AppData/Local/Programs/Python/**)"
+    ]
+  }
+}

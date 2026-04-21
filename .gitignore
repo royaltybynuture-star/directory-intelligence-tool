@@ -1,0 +1,25 @@
+.env
+profile.json
+profiles/
+workspace/
+context/*
+!context/.gitkeep
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python build artifacts
+*.egg-info/
+dist/
+build/
+
+# Debug / scratch files
+*.png
+*.html
+debug_*.json
